@@ -75,6 +75,8 @@ slcList.onchange = function () {
     (todo) => todo.listId === currentSelectedValue
   );
 
+  currentTodosFromCurrentList.sort((a, b) => a.completed - b.completed);
+
   currentTodosFromCurrentList.forEach((item) => {
     todosDiv.innerHTML += `
     <p class="${item.class}">${item.id}. - ${
