@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="selectTodoList">
+        <label>Nombre de la Lista</label>
+        <select id="slcList"></select>
+        <input id="inputNewTodoList" placeholder="Nombre Para la Nueva Lista" />
+        <button type="button" id="btnAddNewTodoList">Agregar</button>
+      </section>
+      <hr />
+      <section id="errorList"></section>
+      <br />
+      <section id="titleTodoListSection"></section>
+      <section id="ListOfTodoSection">
+        <label>Nueva Tarea:
+          <input id="newTodoItem" placeholder="Agregar una Nueva Tarea" />
+        </label>
+        <button type="button" id="btnNewTodo">Agregar Tarea</button>
+        <div id="todos"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="/app.js"></script>
+  </body>
+
+</html>
